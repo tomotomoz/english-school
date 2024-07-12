@@ -1,12 +1,12 @@
 'use strict'
 // hamburger menu
-const active = document.querySelector('.nav-area')
+const navArea = document.querySelector('.nav-area')
 const hamburgerBtn = document.getElementById('hamburger-btn')
 const hamburger = document.querySelector('.hamburger')
 
 
 hamburgerBtn.addEventListener('click', function() {
-  active.classList.toggle('active')
+  navArea.classList.toggle('active')
   hamburger.classList.toggle('active')
 });
 
@@ -14,7 +14,7 @@ const nav = document.querySelectorAll('.nav-area > nav > ul > li > a')
 
 nav.forEach((el) => {
   el.addEventListener('click', function(){
-  active.classList.remove('active')
+    navArea.classList.remove('active')
   });
 });
 
@@ -51,7 +51,7 @@ gsap.to('.content-right', {
 const voiceContents = document.querySelectorAll('.voice-content')
 
 voiceContents.forEach((voiceContent) => {
- 
+
   gsap.to (voiceContent, {
     scrollTrigger: {
       trigger: voiceContent,

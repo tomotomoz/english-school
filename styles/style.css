@@ -61,6 +61,7 @@ a:hover {
 
 .header {
   height: 100px;
+  width: 100%;
 }
 
 .nav-area {
@@ -128,7 +129,7 @@ a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 50;
+  z-index: 70;
   width: 100px;
   height: 100px;
   background-color: #FF2A2A;
